@@ -4,6 +4,8 @@ import {TittleArrayComponent} from "./components/title-array-component/TittleArr
 import {CoursesAndDurationComponent} from "./components/courses-and-duration-component/CoursesAndDurationComponent.tsx";
 import {coursesAndDurationArray} from "./data/coursesAndDurationArray.ts";
 import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
+import {coursesArray} from "./data/coursesArray.ts";
+import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
 
 const App = () => {
 
@@ -21,6 +23,11 @@ const App = () => {
             }
             {
                 FamilyComponent()
+            }
+            {
+                coursesArray.map((course, index) => (
+                    <CoursesComponent course={course} key={index}/>
+                ))
             }
         </>
     )
