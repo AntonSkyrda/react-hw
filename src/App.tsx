@@ -1,4 +1,5 @@
 import './App.css'
+import {CommentsComponent} from "./components/comments-component/CommentsComponent.tsx";
 import {TodosComponent} from "./components/todos-component/TodosComponent.tsx";
 import {PostsComponent} from "./components/posts-component/PostsComponent.tsx";
 
@@ -8,6 +9,7 @@ function App() {
         <>
             <TodosComponent/>
             <PostsComponent/>
+            <CommentsComponent/>
         </>
     )
 }

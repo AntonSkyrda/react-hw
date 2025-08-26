@@ -1,8 +1,8 @@
 import type {IPost} from "../models/IPost.ts";
 
-const baseUrl = "https://jsonplaceholder.typicode.com/posts";
+const postsUrl = "https://jsonplaceholder.typicode.com/posts";
 
 export const getAllPosts = async (): Promise<IPost[]> => {
-    return await fetch(baseUrl).
+    return await fetch(postsUrl).
     then(response => response.json())
 }
