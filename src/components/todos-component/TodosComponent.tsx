@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {getAllTodos} from "../../services/api.service.ts";
+import {getAllTodos} from "../../services/todo.service.ts";
 import {TodoComponent} from "../todo-component/TodoComponent.tsx";
 import type {ITodo} from "../../models/ITodo.ts";
 
