@@ -4,6 +4,7 @@ import type {IComment} from "../models/IComment.ts";
 import type {ITodoDummyJson, ITodoDummyJsonResponse} from "../models/ITodoDummyJson.ts";
 import type {IPostsDummyJson, IPostsDummyJsonResponse} from "../models/IPostDummyJson.ts";
 import type {ICommentDummyJsonResponse, ICommentsDummyJson} from "../models/ICommentDummyJson.ts";
+import type {IProductDummyJson, IProductDummyJsonResponse} from "../models/IProductsDummyJson.ts";
 
 const baseJsonplaceholderUrl = import.meta.env.VITE_API_JSONPLACEHOLDER_URL;
 const baseDummyjsonUrl = import.meta.env.VITE_API_DUMMYJSON_URL;
@@ -15,6 +16,7 @@ const postsUrl = `${baseJsonplaceholderUrl}posts`;
 const todosDjsonUrl = `${baseDummyjsonUrl}todos/?limit=0`;
 const commentsDjsonUrl = `${baseDummyjsonUrl}comments/?limit=0`;
 const postsDjsonUrl = `${baseDummyjsonUrl}posts/?limit=0`;
+const productsDjsonUrl = `${baseDummyjsonUrl}products/?limit=0`;
 
 export const getAllTodos = async (): Promise<ITodo[]> => {
     return await fetch(todosUrl).then(response => response.json())
@@ -44,4 +46,10 @@ export const getAllCommentsDummyJson = async (): Promise<ICommentsDummyJson[]> =
     const response: ICommentDummyJsonResponse = await fetch(commentsDjsonUrl).then(response => response.json())
 
     return response.comments
+}
+
+export const getAllProductsDummyJson = async (): Promise<IProductDummyJson[]> => {
+    const response: IProductDummyJsonResponse = await fetch(productsDjsonUrl).then(response => response.json())
+
+    return response.products;
 }

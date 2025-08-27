@@ -1,5 +1,6 @@
 import './App.css'
-import {TodosDummyJsonComponent} from "./components/todos-dummy-json-component/TodosDummyJsonComponent.tsx";
+import {ProductsDummyJsonComponent} from "./components/products-dummy-json-component/ProductsDummyJsonComponent.tsx";
+// import {TodosDummyJsonComponent} from "./components/todos-dummy-json-component/TodosDummyJsonComponent.tsx";
 // import {PostsDummyJsonComponent} from "./components/posts-dummy-json-component/PostsDummyJsonComponent.tsx";
 // import {CommentsDummyJsonComponent} from "./components/comments-dummy-json-component/CommentsDummyJsonComponent.tsx";
 // import {CommentsDummyJsonComponent} from "./components/comments-component/CommentsDummyJsonComponent.tsx";
@@ -15,7 +16,8 @@ function App() {
             {/*<CommentsDummyJsonComponent/>*/}
             {/*{<CommentsDummyJsonComponent/>}*/}
             {/*{<PostsDummyJsonComponent/>}*/}
-            {<TodosDummyJsonComponent/>}
+            {/*{<TodosDummyJsonComponent/>}*/}
+            {<ProductsDummyJsonComponent/>}
         </>
     )
 }
