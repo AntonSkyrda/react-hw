@@ -1,4 +1,4 @@
-import {getAllComments} from "../../services/comment.service.ts";
+import {getAllComments} from "../../services/api.service.ts";
 import {useEffect, useState} from "react";
 import type {IComment} from "../../models/IComment.ts";
 import {CommentComponent} from "../comment-component/CommentComponent.tsx";

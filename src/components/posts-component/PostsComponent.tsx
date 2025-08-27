@@ -1,5 +1,5 @@
 import type {IPost} from "../../models/IPost.ts";
-import {getAllPosts} from "../../services/post.service.ts";
+import {getAllPosts} from "../../services/api.service.ts";
 import {useEffect, useState} from "react";
 import {PostComponent} from "../post-component/PostComponent.tsx";
 
