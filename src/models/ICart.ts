@@ -1,0 +1,18 @@
+import type {IProduct} from "./IProduct.ts";
+
+export interface ICart {
+  id: number;
+  products: IProduct[];
+  total: number;
+  discountedTotal: number;
+  userId: number;
+  totalProducts: number;
+  totalQuantity: number;
+}
+
+export interface ICartsResponse {
+  carts: ICart[];
+  total: number;
+  skip: number;
+  limit: number;
+}

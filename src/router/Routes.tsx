@@ -5,6 +5,7 @@ import {UsersPage} from "../pages/UsersPage.tsx";
 import {PostsPage} from "../pages/PostsPage.tsx";
 import {CommentsPage} from "../pages/CommentsPage.tsx";
 import {ProductsPage} from "../pages/ProductsPage.tsx";
+import {CartsPage} from "../pages/CartsPage.tsx";
 
 export const routes = createBrowserRouter(
     [
@@ -18,7 +19,13 @@ export const routes = createBrowserRouter(
                 },
                 {
                     path: "users",
-                    element: <UsersPage/>
+                    element: <UsersPage/>,
+                    children: [
+                        {
+                            path: ":id/carts",
+                            element: <CartsPage/>
+                        }
+                    ]
                 },
                 {
                     path: "posts",
