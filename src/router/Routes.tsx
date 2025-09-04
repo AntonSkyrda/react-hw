@@ -20,12 +20,10 @@ export const routes = createBrowserRouter(
                 {
                     path: "users",
                     element: <UsersPage/>,
-                    children: [
-                        {
-                            path: ":id/carts",
-                            element: <CartsPage/>
-                        }
-                    ]
+                },
+                {
+                    path: "users/:id/carts",
+                    element: <CartsPage/>
                 },
                 {
                     path: "posts",
