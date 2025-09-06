@@ -29,10 +29,36 @@ export const PaginationComponent: FC<PaginationPropsType> = ({total}) => {
     }
 
     return (
-        <div className="flex flex-col align-center space-between">
-            <button onClick={prevPage}>Previous
+        <div className="flex space-x-68">
+            <button onClick={prevPage} className="
+              px-4 py-2
+              rounded-lg
+              bg-blue-600
+              text-white
+              font-medium
+              shadow
+              hover:bg-blue-700
+              active:bg-blue-800
+              focus:outline-none
+              focus:ring-2
+              focus:ring-blue-400
+              transition
+            ">Previous
             </button>
-            <button onClick={nextPage}>Next
+            <button onClick={nextPage} className="
+              px-4 py-2
+              rounded-lg
+              bg-blue-600
+              text-white
+              font-medium
+              shadow
+              hover:bg-blue-700
+              active:bg-blue-800
+              focus:outline-none
+              focus:ring-2
+              focus:ring-blue-400
+              transition
+            ">Next
             </button>
         </div>
     );

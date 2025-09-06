@@ -20,7 +20,7 @@ export const UsersComponent = () => {
         })
     }, [currentSkip])
     return (
-        <div>
+        <div className="flex gap-4 flex-col items-center ">
             {
                 users.map((user: IUser) => <UserComponent key={user.id} user={user}/>)
             }
